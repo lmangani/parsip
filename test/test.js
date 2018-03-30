@@ -1,6 +1,7 @@
 /* parsip core */
 
-const parsip = require('./index');
+var expect    = require("chai").expect;
+const parsip = require('../index');
 
 const testmessage = 'INVITE sip:5000@sip.botauro.com;user=phone SIP/2.0\r\n\
 Via: SIP/2.0/TCP 192.168.178.22:38488;branch=z9hG4bK1428069545;rport;alias\r\n\
@@ -44,7 +45,14 @@ a=candidate:0 1 UDP 2113667327 203.0.113.1 55400 typ host\r\n\
 a=candidate:1 2 UDP 2113667326 203.0.113.1 55401 typ host\r\n\
 ';
 
-var decoded = parsip.getSIP(testmessage);
-console.log(JSON.stringify(decoded.from))
 
-//if (decoded.body) console.log(parsip.getSDP(decoded.body));
+describe("ParSIP", function() {
+ describe("SIP Parser", function() {
+    it("From Header", function() {
+      var decoded = parsip.getSIP(testmessage);
+      expect(decoded.from.uri._scheme).to.equal("sip");
+      expect(decoded.from.uri._user).to.equal("250");
+      expect(decoded.from.parameters.tag).to.equal("1459587455");
+    });
+  });
+});
