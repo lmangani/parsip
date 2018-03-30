@@ -1,5 +1,5 @@
 
-# parSIP <img src="https://user-images.githubusercontent.com/1423657/38137158-590eefbc-3423-11e8-96dd-487022b5618c.gif" width=200 />
+# parSIP <img src="https://user-images.githubusercontent.com/1423657/38137158-590eefbc-3423-11e8-96dd-487022b5618c.gif" width=200 /><img src="https://travis-ci.org/lmangani/parsip.svg?branch=master"/>
 
 A straight-forward SIP/SDP parsing module for Node/JS
 
