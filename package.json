@@ -1,0 +1,26 @@
+{
+  "name": "parsip",
+  "version": "1.0.0",
+  "description": "Just a SIP Parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmangani/parsip.git"
+  },
+  "keywords": [
+    "sip",
+    "sdp"
+  ],
+  "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com> (http://qxip.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmangani/parsip/issues"
+  },
+  "homepage": "https://github.com/lmangani/parsip#readme",
+  "dependencies": {
+    "sdp-transform": "^2.4.0"
+  }
+}
