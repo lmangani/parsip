@@ -1,0 +1,10 @@
+language: node_js
+
+node_js:
+- "8"
+
+before_script:
+  - npm install
+  - npm install -g mocha chai
+  
+script: npm run test
