@@ -16,4 +16,5 @@ parsip.getSDP(sip_message || sip_message.body);
 ParSIP is released under the MIT License
 
 ### Acknowledgement
+<<<<<<< HEAD
 Based on elements from the awesome [jsSIP](https://github.com/versatica/JsSIP) and `SDP-Tranform` packages
