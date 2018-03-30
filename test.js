@@ -45,5 +45,6 @@ a=candidate:1 2 UDP 2113667326 203.0.113.1 55401 typ host\r\n\
 ';
 
 var decoded = parsip.getSIP(testmessage);
-console.log(decoded)
-if (decoded.body) console.log(parsip.getSDP(decoded.body));
+console.log(JSON.stringify(decoded.from))
+
+//if (decoded.body) console.log(parsip.getSDP(decoded.body));

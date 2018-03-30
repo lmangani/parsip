@@ -1,6 +1,6 @@
 {
   "name": "parsip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Just a SIP Parser",
   "main": "index.js",
   "scripts": {
