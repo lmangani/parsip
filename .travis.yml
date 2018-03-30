@@ -5,6 +5,7 @@ node_js:
 
 before_script:
   - npm install
-  - npm install -g mocha chai
+  - npm install -g mocha 
+  - npm install chai
   
 script: npm run test
