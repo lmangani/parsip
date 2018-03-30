@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/lmangani/parsip#readme",
   "dependencies": {
+    "debug": "^3.1.0",
     "sdp-transform": "^2.4.0"
   },
   "devDpendencies": {
