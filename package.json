@@ -1,7 +1,7 @@
 {
   "name": "parsip",
-  "version": "1.0.2",
-  "description": "Just a SIP Parser",
+  "version": "1.0.3",
+  "description": "A straight-forward SIP/SDP parsing module for Node/JS",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*.js"
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "sip",
-    "sdp"
+    "sdp",
+    "parser"
   ],
   "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com> (http://qxip.net/)",
   "license": "MIT",
