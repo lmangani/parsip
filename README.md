@@ -28,8 +28,8 @@ if (sip.headers['Content-Type'][0].raw == 'application/vq-rtcpxr'){
 
 #### X-RTP-Stat to JSON
 ```
-if (hdr['X-Rtp-Stat'][0].raw){
-	var xrtp = getPairs(hdr['X-Rtp-Stat'][0].raw);
+if (sip.headers['X-Rtp-Stat'][0].raw){
+	var xrtp = parsip.getVQ(sip.headers['X-Rtp-Stat'][0].raw);
 }
 ```
 ```
