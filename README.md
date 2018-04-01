@@ -8,13 +8,15 @@ A straight-forward SIP/SDP parsing module for Node/JS
 var parsip = require('parsip');
 var sip_message = "..." // Valid SIP Message here
 
-// SIP
+/* SIP */
 var sip = parsip.getSIP(sip_message);
 
-// SDP
+/* SDP */
 var sdp = parsip.getSDP(sip.body);
+```
 
-// VQ
+```
+/* VQ PUBLISH Extraction */
 if (sip.headers['Content-Type'][0].raw == 'application/vq-rtcpxr'){
   var vqj = parsip.getVQ(sip.headers.Packetloss[0].raw);
   // { NLR: '0.0', JDR: '0.0' }
