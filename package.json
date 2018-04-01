@@ -1,6 +1,6 @@
 {
   "name": "parsip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A straight-forward SIP/SDP parsing module for Node/JS",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,9 @@
   "keywords": [
     "sip",
     "sdp",
+    "rtcpxr",
+    "xrtp",
+    "vq-rtcpxr",
     "parser"
   ],
   "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com> (http://qxip.net/)",
