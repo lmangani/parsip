@@ -5,19 +5,19 @@ A straight-forward SIP/SDP parsing module for Node/JS
 
 ## Usage
 #### SIP to JSON
-```
+```javascript
 var parsip = require('parsip');
 var sip_message = "..." // Valid SIP Message here
 var sip = parsip.getSIP(sip_message);
 ```
 
 #### SDP to JSON
-```
+```javascript
 var sdp = parsip.getSDP(sip.body);
 ```
 
 #### VQ PUBLISH to JSON
-```
+```javascript
 if (sip.headers['Content-Type'][0].raw == 'application/vq-rtcpxr'){
   var vqj = parsip.getVQ(sip.headers.Packetloss[0].raw);
 }
@@ -27,7 +27,7 @@ if (sip.headers['Content-Type'][0].raw == 'application/vq-rtcpxr'){
 ```
 
 #### X-RTP-Stat to JSON
-```
+```javascript
 if (sip.headers['X-Rtp-Stat'][0].raw){
 	var xrtp = parsip.getVQ(sip.headers['X-Rtp-Stat'][0].raw);
 }
