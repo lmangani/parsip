@@ -46,6 +46,12 @@ if (sip.headers['X-Rtp-Stat'][0].raw){
   DE: 'PCMA/8000' }
 ```
 
+#### JWT to JSON
+```javascript
+var jwt = parsip.getJWT(sip.body.identity);
+```
+
+
 ### License
 ParSIP is released under the MIT License
 
