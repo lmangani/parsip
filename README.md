@@ -13,7 +13,9 @@ var sip = parsip.getSIP(sip_message);
 
 #### SDP to JSON
 ```javascript
-var sdp = parsip.getSDP(sip.body);
+if (sip.headers['Content-Type'][0].raw == 'application/sdp'){
+  var sdp = parsip.getSDP(sip.body);
+}
 ```
 
 #### VQ PUBLISH to JSON
