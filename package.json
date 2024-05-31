@@ -27,7 +27,7 @@
   "homepage": "https://github.com/lmangani/parsip#readme",
   "dependencies": {
     "debug": "^4.3.4",
-    "jwt-decode": "^3.1.2",
+    "jwt-decode": "^4.0.0",
     "sdp-transform": "^2.4.0"
   },
   "devDpendencies": {
