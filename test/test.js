@@ -1,6 +1,6 @@
 /* parsip core */
 
-var expect    = require("chai").expect;
+const expect    = require("chai").expect;
 const parsip = require('../index');
 
 const testmessage = 'INVITE sip:5000@sip.host.com;user=phone SIP/2.0\r\n\
